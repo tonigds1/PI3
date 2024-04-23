@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 
 public class Curso {
@@ -19,7 +20,7 @@ public class Curso {
 
     public Curso(){}
 
-    public int getIdCurso() {
+    public int getIdCursguio() {
         return idCurso;
     }
     public void setIdCurso(int idCurso) {

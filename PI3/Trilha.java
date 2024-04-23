@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 
 public class Trilha {
@@ -13,13 +14,6 @@ public class Trilha {
         this.desricao = descricao;
         this.cursosDisponiveis = cursosDisponiveis;
         this.usuarios = usuarios;
-    }
-
-    //Construtor de teste
-    public Trilha(int idTrilha, String nomeTrilha, String descricao){
-        this.idTrilha = idTrilha;
-        this.nomeTrilha = nomeTrilha;
-        this.desricao = descricao;
     }
 
     public Trilha(){}
