@@ -15,6 +15,13 @@ public class Trilha {
         this.usuarios = usuarios;
     }
 
+    //Construtor de teste
+    public Trilha(int idTrilha, String nomeTrilha, String descricao){
+        this.idTrilha = idTrilha;
+        this.nomeTrilha = nomeTrilha;
+        this.desricao = descricao;
+    }
+
     public Trilha(){}
 
     public int getIdTrilha() {
