@@ -11,8 +11,14 @@ public class Main {
         ArrayList<Curso> cursos = new ArrayList<>();
 
         //Usuários fictícios
-        Usuario u1 = new Usuario(1, "Jeff", "Jooj", trilhas);
+        Usuario u1 = new Usuario(1, "Andreza", "Luíze", trilhas);
         usuarios.add(u1);
+        Usuario u2 = new Usuario(2, "Antônio", "Guedes", trilhas);
+        usuarios.add(u2);
+        Usuario u3 = new Usuario(3, "Danilo", "Fernandes", trilhas);
+        usuarios.add(u3);
+        Usuario u4 = new Usuario(4, "Giovanna", "Araujo", trilhas);
+        usuarios.add(u4);
 
         Trilha front = new Trilha(1, "Front-End", "Um curso de front end ensina como criar a parte visual e interativa de sites e aplicativos usando HTML, CSS e JavaScript.", cursos, usuarios);
         trilhas.add(front);
