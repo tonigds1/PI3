@@ -9,11 +9,11 @@ public class Usuario {
     private ArrayList<Trilha> trilhas;
 
     //Construtor completo, e vazio
-    public Usuario(int id, String nome, String sobrenome, ArrayList<Trilha> trilhas){
+    public Usuario(int id, String nome, String sobrenome){
         this.id = id;
         this.nome = nome;
         this.sobrenome = sobrenome;
-        this.trilhas = trilhas;
+        this.trilhas = null;
     }
     public Usuario(){}
 
