@@ -4,16 +4,10 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        
-        
-
-        
-        
         while (true) {
             menuInicial();
-            
+            break;
         }
-        
     }
 
     public static void exibeTrilhas(ArrayList<Trilha> trilhas){
@@ -47,6 +41,7 @@ public class Main {
 
             case 3:
                 menuColabore();
+                menuInicial();
                 break;
 
             case 4:
