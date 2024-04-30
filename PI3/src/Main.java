@@ -13,9 +13,11 @@ import model.Usuario;
 
 public class Main {
     public static void main(String[] args) {
+        //Criar o repositório que vai armazenar as classes
         ArrayList<Usuario> usuarios = new ArrayList<>();
         ArrayList<Trilha> trilhas = new ArrayList<>();
         ArrayList<Curso> cursos = new ArrayList<>();
+        ArrayList<Modulo> modulos = new ArrayList<>();
 
         //Usuários
         Usuario u1 = new Usuario(1, "Andreza", "Luíze");
@@ -28,15 +30,18 @@ public class Main {
         usuarios.add(u4);
 
         //Trilhas
-        Trilha front = new Trilha(1, "Front-End", "Um curso de front end ensina como criar a parte visual e interativa de sites e aplicativos usando HTML, CSS e JavaScript.", cursos, usuarios);
+        Trilha front = new Trilha(1, "Front-End", "Um curso de front end ensina como criar a parte visual e interativa de sites e aplicativos usando HTML, CSS e JavaScript.", cursos);
         trilhas.add(front);
-        Trilha back = new Trilha(2, "Back-End", "Um curso de front end ensina como criar a parte visual e interativa de sites e aplicativos usando HTML, CSS e JavaScript.", cursos, usuarios );
+        Trilha back = new Trilha(2, "Back-End", "Um curso de front end ensina como criar a parte visual e interativa de sites e aplicativos usando HTML, CSS e JavaScript.", cursos );
         trilhas.add(back);
-        Trilha ferramentas = new Trilha(3, "Ferramentas ágeis", "Focam em metodologias ágeis (como Scrum, Kanban) e ferramentas (ex: Jira, Trello) para desenvolvimento de software colaborativo e adaptativo.", cursos, usuarios);
+        Trilha ferramentas = new Trilha(3, "Ferramentas ágeis", "Focam em metodologias ágeis (como Scrum, Kanban) e ferramentas (ex: Jira, Trello) para desenvolvimento de software colaborativo e adaptativo.", cursos);
         trilhas.add(ferramentas);
-        Trilha redes = new Trilha(4, "Redes", "Abordam conceitos básicos e tecnologias de redes de computadores, incluindo arquiteturas, protocolos, segurança e administração de dispositivos de rede.", cursos, usuarios);
+        Trilha redes = new Trilha(4, "Redes", "Abordam conceitos básicos e tecnologias de redes de computadores, incluindo arquiteturas, protocolos, segurança e administração de dispositivos de rede.", cursos);
         trilhas.add(redes);
 
+        Curso HTMLCSS = new Curso(1, "HTML5/ CSS", "O curso de HTML5 e CSS ensina a criar e estilizar páginas web modernas e responsivas.", modulos, front, 0);
+
+        
         
             menuInicial(usuarios, trilhas);
             
@@ -90,6 +95,7 @@ public class Main {
             case 5:
                 menuCadastro(usuarios);
                 menuInicial(usuarios, trilhas);
+                break;
 
             case 0:
                 System.out.println("Obrigado por usar Birdtech");
@@ -268,8 +274,6 @@ public class Main {
         usuario.setId(intDado);
         usuarios.add(usuario);
         System.out.println("Usuário " + usuario.getNome() + " "+ usuario.getSobrenome() + " seu ID é "+ usuario.getId()+ "\nVocê foi cadastrado com sucesso!");
-
-
     }
 }
 

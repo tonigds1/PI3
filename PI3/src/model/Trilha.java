@@ -10,12 +10,12 @@ public class Trilha {
     private ArrayList<Curso> cursosDisponiveis;
     private ArrayList<Usuario> usuarios;
 
-    public Trilha (int idTrilha, String nomeTrilha, String descricao, ArrayList<Curso> cursosDisponiveis, ArrayList<Usuario> usuarios ){
+    public Trilha (int idTrilha, String nomeTrilha, String descricao, ArrayList<Curso> cursosDisponiveis){
         this.idTrilha = idTrilha;
         this.nomeTrilha = nomeTrilha;
         this.desricao = descricao;
         this.cursosDisponiveis = cursosDisponiveis;
-        this.usuarios = usuarios;
+        this.usuarios = new ArrayList<>();
     }
 
     public Trilha(){}
