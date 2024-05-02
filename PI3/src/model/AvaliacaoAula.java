@@ -33,10 +33,5 @@ public class AvaliacaoAula {
     }
     public void setAula(Aula aula) {
         this.aula = aula;
-    }
-
-    public void publicarAvalaiacao(){
-     
-    }
-    
+    } 
 }

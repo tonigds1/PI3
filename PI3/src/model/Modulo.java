@@ -81,19 +81,4 @@ public class Modulo {
     public void setTeste(Teste teste) {
         this.teste = teste;
     }
-
-    public void vizualizarConteudo(){
-
-    }
-
-    public boolean marcarConclusaoModulo(){
-        
-        return marcarConclusaoModulo();
-    }
-
-    public double avaliarModulo(){
-        
-        return avaliarModulo();
-    }
-    
 }

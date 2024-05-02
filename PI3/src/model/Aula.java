@@ -82,8 +82,5 @@ public class Aula {
         this.avaliacoesAula = avaliacoesAula;
     }
 
-    public boolean concluirAula(){
-
-        return concluirAula();
-    }
+    
 }

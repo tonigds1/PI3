@@ -46,17 +46,4 @@ public class Usuario {
     public void setTrilhas(ArrayList<Trilha> trilhas) {
         this.trilhas = trilhas;
     }
-
-    //Métodos
-    public void concluirAula(){
-
-    }
-
-    public void adicionarComentario(){
-
-    }
-
-    
-
-    
 }

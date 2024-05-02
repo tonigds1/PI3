@@ -72,15 +72,4 @@ public class Curso {
     public void setPorcentagemDeConclusao(double porcentagemDeConclusao) {
         this.porcentagemDeConclusao = porcentagemDeConclusao;
     }
-
-    public String comentar(){
-
-        return comentar();
-    }
-
-    public double avaliarCurso(){
-
-        return avaliarCurso();
-    }
-    
 }

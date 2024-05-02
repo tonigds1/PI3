@@ -53,10 +53,5 @@ public ArrayList<Usuario> getUsuarios() {
 public void setUsuarios(ArrayList<Usuario> usuarios) {
     this.usuarios = usuarios;
 }
-
-public int calcularProgresso(){
-
-    return calcularProgresso();
-}
     
 }
