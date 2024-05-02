@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Aula {
     private int idAula;
-    private String nomeAula;
+    private String tituloAula;
     private String descricao;
     private String professor;
     private String duracao;
@@ -13,9 +13,9 @@ public class Aula {
     private ArrayList<Professor> professores;
     private ArrayList<AvaliacaoAula> avaliacoesAula;
 
-    public Aula(int idAula, String nomeAula, String descricao, String professor, String duracao, Modulo modulo, ArrayList<Professor> professores, ArrayList<AvaliacaoAula> avaliacoesAula){
+    public Aula(int idAula, String tituloAula, String descricao, String professor, String duracao, Modulo modulo, ArrayList<Professor> professores, ArrayList<AvaliacaoAula> avaliacoesAula){
         this.idAula = idAula;
-        this.nomeAula = nomeAula;
+        this.tituloAula = tituloAula;
         this.descricao = descricao;
         this.professor = professor;
         this.duracao = duracao;
@@ -24,7 +24,10 @@ public class Aula {
         this.avaliacoesAula = avaliacoesAula;
     }
 
-    public Aula(){}
+    public Aula() {
+        this.professores = new ArrayList<>();
+        this.avaliacoesAula = new ArrayList<>();
+    }
 
     public int getIdAula() {
         return idAula;
@@ -33,11 +36,11 @@ public class Aula {
         this.idAula = idAula;
     }
 
-    public String getNomeAula() {
-        return nomeAula;
+    public String getTituloAula() {
+        return tituloAula;
     }
-    public void setNomeAula(String nomeAula) {
-        this.nomeAula = nomeAula;
+    public void setTituloAula(String tituloAula) {
+        this.tituloAula = tituloAula;
     }
 
     public String getDescricao() {
